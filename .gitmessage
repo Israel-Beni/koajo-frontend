@@ -2,8 +2,6 @@
 #
 # <type>(<optional-scope>): <short imperative summary>
 #
-# [Optional] After one blank line, provide a more detailed description explaining what and why.
-# Focus on *what changed* and *why it was necessary* rather than how.
 #
 # Types:
 # - feat: A new feature
@@ -31,7 +29,7 @@
 #
 # -------------------------------------------------------
 # Notes:
-# - The first line should be no more than 72 characters.
+# - The first line should be no more than 50 characters.
 # - Use past tense: "changed", not "change" or "changes".
 # - Be very concise.
 # - If the commit relates to an issue, mention it explicitly.
