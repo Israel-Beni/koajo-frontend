@@ -1,0 +1,37 @@
+# Git Commit Message Guidelines
+#
+# <type>(<optional-scope>): <short imperative summary>
+#
+# [Optional] After one blank line, provide a more detailed description explaining what and why.
+# Focus on *what changed* and *why it was necessary* rather than how.
+#
+# Types:
+# - feat: A new feature
+# - fix: A bug fix
+# - docs: Documentation only changes
+# - style: Changes that do not affect meaning (white-space, formatting, missing semi-colons, etc.)
+# - refactor: A code change that neither fixes a bug nor adds a feature
+# - perf: A code change that improves performance
+# - test: Adding missing tests or correcting existing tests
+# - chore: Changes to the build process or auxiliary tools and libraries
+# - ci: Changes to CI configuration files and scripts
+#
+# Examples:
+# feat(auth): add login with email and password
+# fix(api): handle error when no response from server
+# docs(readme): add installation steps for Linux users
+# style(navbar): adjust spacing between menu items
+# refactor(utils): simplify date parsing logic
+# perf(image-uploads): optimize compression before upload
+# test(profile): add tests for profile update feature
+# chore(deps): update TailwindCSS to v3.3
+# ci(github-actions): add build and deploy workflow
+#
+# [Optional] Related to: #issue-number
+#
+# -------------------------------------------------------
+# Notes:
+# - The first line should be no more than 72 characters.
+# - Use past tense: "changed", not "change" or "changes".
+# - Be very concise.
+# - If the commit relates to an issue, mention it explicitly.
