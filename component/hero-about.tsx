@@ -1,9 +1,6 @@
-import Image from "next/image";
-import { Button } from "./utils";
-import { MyImage, MyCldImage } from "./utils";
+import Image from "next/image";;
 import Video from "next-video";
 import getStarted from "/public/media/videos/get-started.mp4";
-import MediaThemeSutro from "player.style/sutro/react";
 
 export default function Hero() {
   return (
