@@ -13,6 +13,7 @@
   --color-text-500: #171717; /* default */
   --color-gray: #F3F4F6;
   --color-gray-100: #EBEBEB;
+  --color-gray-700: #343434;
   --color-gray-900: #1B1B1B;
   
 
@@ -21,6 +22,7 @@
   --page-offset-horizontal: 1rem; /* 16px */
   --header-offset-horizontal: 1.5rem; /* 24px */
   --header-height: 5.25rem; /* 84px */
+  /* --inner-offset-horizontal: 1.5rem; 24px */
 }
 
 @media (min-width: 768px) {
@@ -68,6 +70,7 @@ body {
   --color-text-500: var(--color-text-500);
   --color-gray: var(--color-gray);
   --color-gray-100: var(--color-gray-100);
+  --color-gray-700: var(--color-gray-700);
   --color-gray-900: var(--color-gray-900);
 
   /* Fonts */
@@ -76,10 +79,11 @@ body {
   --font-manrope: var(--font-manrope);
   --font-instrument-sans: var(--font-instrument-sans);
 
-  /* Page offset */
+  /* Page offsets */
   --page-offset-horizontal: 1.25rem; /* Page offset horizontal: 20px */
   --page-offset-height: 5rem; /* Page offset height: 80px */
   --header-height: 6.5rem; /* Header height: 104px */
+
 }
 
 @layer components {
@@ -101,6 +105,12 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  
+  /* .inner_container {
+    width: 100%;
+    padding-left: var(--inner-offset-horizontal);
+    padding-right: var(--inner-offset-horizontal);
+  } */
 
   /* Messages */
   .message_error {
