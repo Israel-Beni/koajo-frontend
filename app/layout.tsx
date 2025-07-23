@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.className} antialiased`}>
         <Header />
-        <main className="page_container">{children}</main>
+        <main className="">{children}</main>
       </body>
     </html>
   );
