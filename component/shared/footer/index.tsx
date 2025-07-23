@@ -5,7 +5,7 @@ import MainLinks from "./main-links";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray">
+    <footer className="w-full bg-gray pt-7">
       <div className="page_container flex flex-col items-center gap-6 pb-9">
         <div className="relative px-6 py-15 bg-[image:linear-gradient(250deg,#E78D5C_1.2%,#2F8488_43.67%,#000_96.25%),linear-gradient(107deg,#672706_-2.13%,#024044_46.9%,#3A1E10_94.01%)] rounded-xl">
           {/* Background */}
