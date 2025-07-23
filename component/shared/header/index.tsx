@@ -31,8 +31,8 @@ export default function Header({ className = "" }: HeaderProps) {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/media/icons/logo.svg"
-            alt="Koajo"
+            src="/media/icons/logo-gradient.svg"
+            alt="Koajo Logo"
             width={100}
             height={28}
             className="h-7 w-auto"
