@@ -3,12 +3,14 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowRightIcon, PlusIcon } from "@radix-ui/react-icons";
+import ZoomIcon  from "@/public/media/icons/zoom.svg";
 import cn from "clsx";
+import Image from "next/image";
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   className?: string;
   showArrow?: boolean;
-  icon?: "arrow-right" | "plus";
+  icon?: "arrow-right" | "plus" | React.ReactNode;
   variant?: "primary" | "secondary" | "gradient";
   href?: string;
   type?: "button" | "submit" | "reset";
@@ -55,6 +57,9 @@ export function Button({
     };
     if (icon === "plus") {
       return <PlusIcon color={colorMap[color]} />;
+    }
+    if (typeof icon !== "string") {
+      return <> {icon} </>;
     }
     return <ArrowRightIcon color={colorMap[color]} />;
   };
