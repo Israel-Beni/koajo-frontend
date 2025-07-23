@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-xl font-semibold text-white text-center leading-tight mb-5 relative z-10">
+          <h1 className="text-xl font-semibold text-white text-center  mb-5 relative z-10">
             Savings. Financial Security.{" "}
             <span className="text-highlight">Financial</span> Freedom
           </h1>
