@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Background */}
           <div className="size-full absolute inset-0 z-0 rounded-[inherit]">
             <Image
-              src="/media/images/background-grid.svg"
+              src="/media/images/background-grid-dark.svg"
               alt="Footer Background"
               fill
               className="object-cover"
