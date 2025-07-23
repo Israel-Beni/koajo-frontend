@@ -8,10 +8,13 @@
   --color-secondary-300: #ACB5BB;
   --color-text-100: #EDF1F3;
   --color-text-200: #DCE4E8;
+  --color-text-300: #B9B9B9;
   --color-text-400: #6C6C6C;
   --color-text-500: #171717; /* default */
   --color-gray: #F3F4F6;
+  --color-gray-100: #EBEBEB;
   --color-gray-900: #1B1B1B;
+  
 
   /* offsets */
   --page-max-width: 23.4375rem; /* 375px */
@@ -60,9 +63,11 @@ body {
   --color-secondary-300: var(--color-secondary-300);
   --color-text-100: var(--color-text-100);
   --color-text-200: var(--color-text-200);
+  --color-text-300: var(--color-text-300);
   --color-text-400: var(--color-text-400);
   --color-text-500: var(--color-text-500);
   --color-gray: var(--color-gray);
+  --color-gray-100: var(--color-gray-100);
   --color-gray-900: var(--color-gray-900);
 
   /* Fonts */
