@@ -3,37 +3,46 @@ import Image from "next/image";
 
 export default function Benefits() {
   return (
-    <section className="w-full bg-gray py-15">
+    <section className="w-full bg-gray py-15 pb-7.5">
       <div className="page_container">
         {/* Heading */}
-        <div className="flex flex-col items-center  gap-5 mb-10">
+        <div className="flex flex-col gap-5 mb-7.5">
           {/* Title */}
-          <h2 className="text-xl font-semibold text-gray-900 text-center">
+          <h2 className="text-xl font-semibold text-gray-900">
             Why Choose <span className="text-highlight">koajo</span>
           </h2>
-          <p className="text-center text-base text-gray-400">
-            Unlike informal rotating savings, we are revolutionizing the way you
-            experience savings
-          </p>
+          <div className="flex flex-col gap-2.5 text-base text-text-500">
+            <p className=" ">
+              Koajo takes the time-tested & proven concept of rotating savings
+              and modernizes it into a secure and seamless digital experience
+            </p>
+
+            <p className="text-gray-900 font-semibold">
+              Traditional Ajo systems have served communities for centuries, but
+              they need to evolve to keep up with modern financial demands.
+            </p>
+          </div>
         </div>
 
         {/* Benefits */}
         <div className="w-full flex flex-col gap-7.5">
           {benefits.map((benefit, idx) => (
             <div key={benefit.title} className="w-full">
-              <div className="size-12.5 flex items-center justify-center  border-2 border-primary/10 rounded-xl mb-6 bg-[image:radial-gradient(111.8%_111.8%_at_50%_100%,_rgba(253,_139,_81,_0.20)_0%,_rgba(253,_139,_81,_0.00)_52%)]">
-                <Image
-                  src={benefit.icon}
-                  alt={benefit.title}
-                  width={36}
-                  height={36}
-                  className="size-auto object-contain"
-                />
+              <div className="flex items-center gap-3.5">
+                <div className="size-11.5 flex items-center justify-center  border-2 border-primary/10 rounded-xl mb-5 bg-[image:radial-gradient(111.8%_111.8%_at_50%_100%,_rgba(253,_139,_81,_0.20)_0%,_rgba(253,_139,_81,_0.00)_52%)]">
+                  <Image
+                    src={benefit.icon}
+                    alt={benefit.title}
+                    width={36}
+                    height={36}
+                    className="size-auto object-contain"
+                  />
+                </div>
+                <h3 className="font-medium text-2lg mb-4 text-text-500">
+                  {benefit.title}
+                </h3>
               </div>
-              <h3 className="font-medium text-2lg mb-4 text-gray-900">
-                {benefit.title}
-              </h3>
-              <p className="text-base text-gray-700">{benefit.description}</p>
+              <p className="text-base text-text-700">{benefit.description}</p>
               {idx !== benefits.length - 1 && (
                 <hr className="border-text-200 mt-7.5" />
               )}
@@ -47,27 +56,27 @@ export default function Benefits() {
 
 const benefits = [
   {
-    icon: "/media/icons/mission.svg",
-    title: "Mission",
+    icon: "/media/icons/hourglass.svg",
+    title: "Built for You, Not the Banks",
     description:
-      "Our drive is to help people break free from the cycle of debt, save consistently, and build wealth together. We're fueled by the belief that everyone deserves access to",
+      "No hidden fees, no credit checks, Koajo is built for YOU. For the dreamers, the planners, and the wealth-builders. Millions have reached financial goals using this savings tradition, especially among immigrant communities.",
   },
   {
-    icon: "/media/icons/vision.svg",
-    title: "The Vision",
+    icon: "/media/icons/separation.svg",
+    title: "Freedom from Debt",
     description:
-      "We are driven to become the trusted financial ecosystem for everyone, regardless of background or income level, to save, grow wealth, and achieve financial freedom",
+      "Access cash when it's your turn, without loans or high-interest traps. Loans can help in a pinch, but they come with interest, stress and strings attached. Savings, on the other hand, are YOURS to keep. No payback, no pressure.",
   },
   {
-    icon: "/media/icons/value.svg",
-    title: "The Value",
+    icon: "/media/icons/power-up.svg",
+    title: "Power Your Future",
     description:
-      "Trust We build trust through transparency, reliability, and safeguarding your financial journey. Empowerment We empower you to take control of your money and achieve your financial goals.",
+      "Use your savings to invest in life's biggest moments, without debt or stress. With Koajo, saving is no longer a gamble. No excuses, just discipline and results. It's a structured, stress-free path to financial security and growth",
   },
   {
-    icon: "/media/icons/promise.svg",
-    title: "The Promise",
+    icon: "/media/icons/reduce.svg",
+    title: "Reduce Risk",
     description:
-      "On this journey, Koajo’s promise is to provide a simple, secure, and transparent savings experience that helps you take control of your financial future.",
+      "Our platform is built on trust, security, and reliability, unlike traditional Ajo. We ensure that payouts are always on schedule, with no manual tracking and no risk of members or leaders disappearing.",
   },
 ];
