@@ -47,6 +47,7 @@ export default function Hero() {
         </div>
 
         {/* Stats Card */}
+        <div className="inner_container">
         <MyImage
           src="hero-home-stats-mobile_g8mofp"
           alt="Users avatars"
@@ -55,7 +56,9 @@ export default function Hero() {
           className="rounded-lg size-auto relative -top-[calc(124rem/16)] mx-auto z-10"
           isCloudinary
           quality={100}
+          priority
         />
+        </div>
       </div>
     </section>
   );
