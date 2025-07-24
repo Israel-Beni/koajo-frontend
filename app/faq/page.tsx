@@ -2,7 +2,7 @@ import React from "react";
 import CardFaq from "@/component/utils/card-faq-topic";
 import { Button } from "@/component/utils";
 import Hero from "@/component/shared/hero";
-import FaqCategories from "@/component/faq-categories";
+import FaqCategories from "@/component/faq-categories-listings";
 
 export default function FaqPage() {
   return (
