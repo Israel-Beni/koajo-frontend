@@ -17,7 +17,7 @@ export default function Team() {
           </p>
         </div>
 
-        {/* Benefits */}
+        {/* Members */}
         <div className="w-full flex flex-col gap-7">
           {members.map((member, idx) => (
             <div key={idx} className="w-full flex flex-col">
