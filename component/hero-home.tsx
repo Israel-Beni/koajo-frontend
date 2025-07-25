@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="page_container -mb-[calc(124rem/16)]">
         <div className="flex flex-col items-center w-full pt-15 pb-[calc(124rem/16)] rounded-lg bg-[image:linear-gradient(250deg,#E78D5C_1.2%,#2F8488_43.67%,#000_96.25%),linear-gradient(107deg,#672706_-2.13%,#024044_46.9%,#3A1E10_94.01%)]">
           {/* Background */}
-          <div className="size-full absolute inset-0 z-0 rounded-[inherit]">
+          <div className="size-full absolute inset-0 z-0 rounded-[inherit] overflow-hidden">
             <Image
               src="/media/images/background-grid-dark.svg"
               alt="Hero Background"
