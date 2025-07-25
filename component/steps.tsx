@@ -19,7 +19,7 @@ export default function Steps() {
         </div>
 
         {/* steps */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-7.5">
           {steps.map((step, idx) => (
             <div key={idx} className="flex flex-col gap-4">
               <h3 className="text-2lg font-semibold text-transparent bg-clip-text w-full bg-[image:linear-gradient(90deg,#5A606C_0%,#FFFFFF_50%,#5A606C_100%)]">
