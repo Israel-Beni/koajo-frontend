@@ -5,6 +5,7 @@ import Steps from "@/component/steps";
 import Solutions from "@/component/solutions";
 import Features from "@/component/features";
 import Marques from "@/component/marques";
+import Comparison from "@/component/comparison";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Steps />
       <Benefits />
       <Features />
+      <Comparison />
       <Pricing />
     </>
   );
