@@ -31,7 +31,7 @@ export function Button({
 }: ButtonProps) {
   // Base button classes
   const baseClasses =
-    "inline-flex items-center justify-center gap-2.5 px-6 py-3 w-fit rounded-[0.875rem] text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
+    "inline-flex items-center justify-center gap-2.5 px-6 py-3 w-fit rounded-[0.875rem] text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
 
   // Variant-specific classes
   const variantClasses = {
