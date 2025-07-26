@@ -8,7 +8,7 @@ export default function Hero({
   description: string;
 }) {
   return (
-    <section className="w-full bg-gray pt-2.5">
+    <section className="w-full bg-gray py-2.5">
       <div className="page_container">
         <div className="min-h-[calc(384rem/16)] py-15 flex  justify-center items-center rounded-[0.875rem] bg-white">
           {/* Background */}
