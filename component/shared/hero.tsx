@@ -22,13 +22,13 @@ export default function Hero({
           </div>
 
           {/* Content */}
-          <div className="inner_container relative z-10 flex flex-col ">
+          <div className="inner_container relative z-10 flex flex-col  text-center gap-5">
             <h2
-              className="text-xl font-semibold text-text-500 mb-4"
+              className="text-xl font-semibold text-text-600"
               dangerouslySetInnerHTML={{ __html: title }}
             />
             <div
-              className="text-base text-text-400 mb-6"
+              className="text-base text-text-500"
               dangerouslySetInnerHTML={{ __html: description }}
             />
           </div>
