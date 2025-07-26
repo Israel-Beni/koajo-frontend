@@ -34,7 +34,7 @@ const solutions = [
     title: "Financial Foundation",
     image: () => (
       <MyImage
-        src="financial-freedon_q1oswa"
+        src="financial-foundation_x73wx5"
         alt="Financial foundation"
         width={343}
         height={353}
@@ -49,7 +49,7 @@ const solutions = [
     title: "Financial Freedom",
     image: () => (
       <MyImage
-        src="financial-freedom_ho0nxf"
+        src="financial-freedom_k4dzys"
         alt="Financial foundation"
         width={343}
         height={353}
@@ -64,7 +64,7 @@ const solutions = [
     title: "Financial Fluidity",
     image: () => (
       <MyImage
-        src="financial-fludity_r1xf8w"
+        src="financial-fluidity_uyshzl"
         alt="Financial foundation"
         width={343}
         height={353}

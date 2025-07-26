@@ -49,7 +49,7 @@ export default function Hero() {
         {/* Stats Card */}
         <div className="inner_container">
         <MyImage
-          src="hero-home-stats-mobile_g8mofp"
+          src="hero-home_zafbgr"
           alt="Users avatars"
           width={293}
           height={347}
