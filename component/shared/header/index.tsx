@@ -1,20 +1,13 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
 import cn from "clsx";
 import Link from "next/link";
+import MenuMobile from "./menu-mobile";
 
 interface HeaderProps {
   className?: string;
 }
 
 export default function Header({ className = "" }: HeaderProps) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <header
@@ -31,7 +24,7 @@ export default function Header({ className = "" }: HeaderProps) {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/media/icons/logo-gradient.svg"
+            src="/media/icons/logo-dark-gradient.svg"
             alt="Koajo Logo"
             width={100}
             height={28}
@@ -39,20 +32,7 @@ export default function Header({ className = "" }: HeaderProps) {
           />
         </Link>
 
-        {/* Hamburger Menu Icon */}
-        <button
-          onClick={toggleMenu}
-          className="lg:hidden"
-          aria-label="Toggle menu"
-        >
-          <Image
-            src="/media/icons/menu.svg"
-            alt="Menu"
-            width={24}
-            height={24}
-            className="h-6 w-auto"
-          />
-        </button>
+        <MenuMobile />
       </div>
     </header>
   );
