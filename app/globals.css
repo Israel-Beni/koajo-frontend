@@ -13,8 +13,10 @@
   --color-text-500: #171717; /* default */
   --color-gray: #F3F4F6;
   --color-gray-100: #EBEBEB;
+  --color-gray-400: #809092;
   --color-gray-700: #343434;
   --color-gray-900: #1B1B1B;
+  --color-teal-800: #032425;
   
 
   /* offsets */
@@ -70,9 +72,10 @@ body {
   --color-text-500: var(--color-text-500);
   --color-gray: var(--color-gray);
   --color-gray-100: var(--color-gray-100);
+  --color-gray-400: var(--color-gray-400);
   --color-gray-700: var(--color-gray-700);
   --color-gray-900: var(--color-gray-900);
-
+  --color-teal-800: var(--color-teal-800);
   /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
