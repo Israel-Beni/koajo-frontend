@@ -4,6 +4,7 @@ import Benefits from "@/component/benefits";
 import Steps from "@/component/steps";
 import Solutions from "@/component/solutions";
 
+
 export default function HomePage() {
   return (
     <>
