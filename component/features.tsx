@@ -57,7 +57,7 @@ export const features = [
       >
         <div className="flex flex-col items-center justify-center text-center">
           <span className="text-sm font-semibold text-white">Runtime</span>
-          <span className="text-xl text-white">12 Weeks or 24 Weeks</span>
+          <span className="text-xl text-white">12 Months or 24 Weeks</span>
         </div>
       </Donot>
     ),
