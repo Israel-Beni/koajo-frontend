@@ -11,6 +11,7 @@
   --color-text-300: #B9B9B9;
   --color-text-400: #6C6C6C;
   --color-text-500: #171717; /* default */
+  --color-text-600: #04070E;
   --color-gray: #F3F4F6;
   --color-gray-100: #EBEBEB;
   --color-gray-400: #809092;
@@ -70,6 +71,7 @@ body {
   --color-text-300: var(--color-text-300);
   --color-text-400: var(--color-text-400);
   --color-text-500: var(--color-text-500);
+  --color-text-600: var(--color-text-600);
   --color-gray: var(--color-gray);
   --color-gray-100: var(--color-gray-100);
   --color-gray-400: var(--color-gray-400);
