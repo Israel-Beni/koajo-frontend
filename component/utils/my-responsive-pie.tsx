@@ -1,3 +1,4 @@
+"use client";
 import { ResponsivePie, MayHaveLabel, PieSvgProps } from "@nivo/pie";
 import { ResponsiveProps, WithChartRef } from "@nivo/core";
 
