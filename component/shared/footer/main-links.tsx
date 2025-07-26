@@ -181,16 +181,12 @@ const footerLinksDesktop = [
         id: "utility-pages",
         links: [
           {
-            label: "Privacy",
-            href: "/privacy",
-          },
-          {
-            label: "Policy",
-            href: "/policy",
+            label: "Privacy Policy",
+            href: "/legals/privacy-policy",
           },
           {
             label: "Terms of Use",
-            href: "/terms-of-use",
+            href: "/legals/terms-of-use",
           },
         ],
       },
