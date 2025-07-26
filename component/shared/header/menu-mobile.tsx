@@ -10,9 +10,6 @@ import { Button } from "@/component/utils";
 export default function MenuMobile() {
   const [open, setOpen] = useState(false);
 
-  const onPageChange = () => {
-// change the data-state to closed
-  }
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       {/* Hamburger Button */}
@@ -39,7 +36,7 @@ export default function MenuMobile() {
         >
           <div className="header_container py-7 flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
               <Image
                 src="/media/icons/logo-light-gradient.svg"
                 alt="Koajo Logo"
