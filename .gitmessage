@@ -15,21 +15,18 @@
 # - ci: Changes to CI configuration files and scripts
 #
 # Examples:
-# feat(auth): add login with email and password
-# fix(api): handle error when no response from server
-# docs(readme): add installation steps for Linux users
-# style(navbar): adjust spacing between menu items
-# refactor(utils): simplify date parsing logic
-# perf(image-uploads): optimize compression before upload
-# test(profile): add tests for profile update feature
-# chore(deps): update TailwindCSS to v3.3
-# ci(github-actions): add build and deploy workflow
-#
-# [Optional] Related to: #issue-number
+# feat(auth): added login with email and password
+# fix(api): handled error when no response from server
+# docs(readme): added installation steps for Linux users
+# style(navbar): adjusted spacing between menu items
+# refactor(utils): simplified date parsing logic
+# perf(image-uploads): optimized compression before upload; and implemented seo meta tags
+# test(profile): added tests for profile update feature
+# chore(deps): installed @radix-ui/react-dropdown-menu
+# ci(github-actions): added build and deploy workflow
 #
 # -------------------------------------------------------
 # Notes:
-# - The first line should be no more than 50 characters.
+# - The first line should not be more than 50 characters.
 # - Use past tense: "changed", not "change" or "changes".
 # - Be very concise.
-# - If the commit relates to an issue, mention it explicitly.
