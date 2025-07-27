@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.className} antialiased`}>
         <Header />
-        <main className="">{children}</main>
+        <main className="mt-header-height">{children}</main>
         <Footer />
       </body>
     </html>
