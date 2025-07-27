@@ -66,7 +66,7 @@ export function Button({
 
   // Button content
   const buttonJsx = (
-    <button type={type} className={buttonClasses} disabled {...props}>
+    <button type={type} className={buttonClasses} aria-label={text} disabled={disabled} {...props}>
       {text && <span>{text}</span>}
       {showArrow &&
         iconJsx(["primary", "gradient"].includes(variant) ? "white" : "dark")}

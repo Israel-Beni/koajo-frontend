@@ -3,25 +3,24 @@
 :root {
   --color-background: #ffffff;
   --color-foreground: #171717;
-  --color-primary: #E7854D;
-  --color-secondary-100: #EDF1F3;
-  --color-secondary-300: #ACB5BB;
-  --color-text-100: #EDF1F3;
-  --color-text-200: #DCE4E8;
-  --color-text-300: #B9B9B9;
-  --color-text-400: #6C6C6C;
+  --color-primary: #e7854d;
+  --color-secondary-100: #edf1f3;
+  --color-secondary-300: #acb5bb;
+  --color-text-100: #edf1f3;
+  --color-text-200: #dce4e8;
+  --color-text-300: #b9b9b9;
+  --color-text-400: #6c6c6c;
   --color-text-500: #171717; /* default */
-  --color-text-600: #04070E;
-  --color-gray: #F3F4F6;
-  --color-gray-100: #EBEBEB;
+  --color-text-600: #04070e;
+  --color-gray: #f3f4f6;
+  --color-gray-100: #ebebeb;
   --color-gray-400: #809092;
   --color-gray-700: #343434;
-  --color-gray-900: #1B1B1B;
+  --color-gray-900: #1b1b1b;
   --color-teal-800: #032425;
-  --color-cyan-100: #ECFCFF;
-  
+  --color-cyan-100: #ecfcff;
 
-  /* offsets */
+  /* Spacing */
   --page-max-width: 23.4375rem; /* 375px */
   --page-offset-horizontal: 1rem; /* 16px */
   --header-offset-horizontal: 1.5rem; /* 24px */
@@ -46,7 +45,6 @@
     --header-height: 6.25rem; /* 100px */
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -80,17 +78,20 @@ body {
   --color-gray-900: var(--color-gray-900);
   --color-teal-800: var(--color-teal-800);
   --color-cyan-100: var(--color-cyan-100);
+
   /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-manrope: var(--font-manrope);
   --font-instrument-sans: var(--font-instrument-sans);
 
-  /* Page offsets */
-  --page-offset-horizontal: 1.25rem; /* Page offset horizontal: 20px */
-  --page-offset-height: 5rem; /* Page offset height: 80px */
-  --header-height: 6.5rem; /* Header height: 104px */
+  /* Page offsets & spacing*/
 
+  --spacing-page-max-width: var(--page-max-width);
+  --spacing-page-offset-horizontal: var(--page-offset-horizontal);
+  --spacing-header-offset-horizontal: var(--header-offset-horizontal);
+  --spacing-header-height: var(--header-height);
+  --spacing-inner-offset-horizontal: var(--inner-offset-horizontal);
 }
 
 @layer components {
@@ -112,7 +113,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .inner_container {
     width: 100%;
     padding-left: var(--inner-offset-horizontal);
@@ -126,7 +127,6 @@ body {
     color: #ef4444;
     font-weight: 500;
     margin: var(--space-m);
-    
   }
 
   .disabled {
@@ -144,19 +144,19 @@ body {
     line-height: normal;
     letter-spacing: -0.42px;
   }
-  
+
   .text-sm {
     font-size: 0.875rem;
     line-height: 1.4;
     letter-spacing: -0.49px;
   }
-  
+
   .text-base {
     font-size: 1rem;
     line-height: 1.4;
     letter-spacing: -0.56px;
   }
-  
+
   .text-md {
     font-size: 1.125rem;
     line-height: 1.4;
@@ -174,41 +174,40 @@ body {
     line-height: 1.4;
     letter-spacing: -0.84px;
   }
-  
+
   .text-xl {
     font-size: 2rem;
     line-height: 1.4;
     letter-spacing: -1.12px;
   }
-  
+
   .text-2xl {
     font-size: 2.25rem;
     line-height: 1.2;
     letter-spacing: -1.26px;
   }
-  
+
   .text-3xl {
     font-size: 2.5rem;
     line-height: 1.2;
-    letter-spacing: -1.4px ;
+    letter-spacing: -1.4px;
   }
-  
+
   .text-4xl {
     font-size: 3.5rem;
     line-height: 1.2;
     letter-spacing: -1.96px;
   }
-  
+
   .text-5xl {
     font-size: 4.5rem;
     line-height: 1.2;
     letter-spacing: -2.52px;
   }
-  
+
   .text-highlight {
     font-family: var(--font-instrument-sans);
     font-style: italic;
     color: var(--color-primary);
   }
-  
 }
