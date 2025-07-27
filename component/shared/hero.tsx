@@ -10,7 +10,7 @@ export default function Hero({
   return (
     <section className="w-full bg-gray py-2.5">
       <div className="page_container">
-        <div className="min-h-[calc(384rem/16)] py-15 flex  justify-center items-center rounded-[0.875rem] bg-white">
+        <div className="relative min-h-[calc(384rem/16)] py-15 flex  justify-center items-center rounded-[0.875rem] bg-white">
           {/* Background */}
           <div className="hidden md:block size-full absolute inset-0 z-0 rounded-[inherit]">
             <Image
