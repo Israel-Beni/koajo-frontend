@@ -6,6 +6,7 @@ import {useState } from "react";
 import cn from "clsx";
 import Link from "next/link";
 import { Button } from "@/component/utils";
+import { menuItems } from "@/data/navigation";
 
 export default function MenuMobile() {
   const [open, setOpen] = useState(false);
@@ -67,9 +68,9 @@ export default function MenuMobile() {
           {/* Menu Items */}
           <nav className="header_container flex flex-col gap-6 ">
             <ul className="flex flex-col gap-4 mb-2.5">
-            {menuItems.map((item) => (
+            {menuItems.map((item, i) => (
+              <li key={i}>
               <Link
-                key={item.label}
                 href={item.href}
                 className={cn(
                   "text-xl text-text-200 hover:text-primary transition",
@@ -79,10 +80,11 @@ export default function MenuMobile() {
               >
                   {item.label}
                 </Link>
+                </li>
               ))}
             </ul>
             <Button
-              href="/get-started"
+              href="/auth/login"
               className="w-full"
               text="Get Started"
               onClick={() => setOpen(false)}
@@ -93,12 +95,5 @@ export default function MenuMobile() {
     </Dialog.Root>
   );
 }
-const menuItems = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Career", href: "/career" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Blog & Press", href: "/blog" },
-  { label: "Login", href: "/auth/login" },
-];
+
 
