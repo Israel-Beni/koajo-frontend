@@ -29,7 +29,7 @@ export default function Header({ className = "" }: HeaderProps) {
         className
       )}
     >
-      <div className="header_container py-7 flex justify-between items-center gap-12">
+      <div className="header_container py-7 flex justify-between items-center gap-9">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -42,7 +42,7 @@ export default function Header({ className = "" }: HeaderProps) {
         </Link>
 
         {/* Menu */}
-        <ul className="hidden lg:flex items-center gap-10">
+        <ul className="hidden lg:flex items-center gap-8">
           {menuItems.map(
             (item, index) =>
               item.label.toLowerCase() !== "login" && (
