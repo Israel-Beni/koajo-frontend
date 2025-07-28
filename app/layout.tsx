@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} antialiased`}>
+      <body className={`${geistSans.className} antialiased transition-all duration-300`}>
         <Header />
         <main className="mt-header-height">{children}</main>
         <Footer />

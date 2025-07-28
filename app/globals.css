@@ -210,4 +210,140 @@ body {
     font-style: italic;
     color: var(--color-primary);
   }
+@variant md {
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: normal;
+    letter-spacing: -0.42px;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    letter-spacing: -0.49px;
+  }
+
+  .text-base {
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: -0.56px;
+  }
+
+  .text-md {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    letter-spacing: -0.63px;
+  }
+
+  .text-lg {
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.7px;
+  }
+
+  .text-2lg {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: -0.84px;
+  }
+
+  .text-xl {
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: -1.12px;
+  }
+
+  .text-2xl {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    letter-spacing: -1.26px;
+  }
+
+  .text-3xl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -1.4px;
+  }
+
+  .text-4xl {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    letter-spacing: -1.96px;
+  }
+
+  .text-5xl {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    letter-spacing: -2.52px;
+  }
+}
+
+@variant lg {
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: normal;
+    letter-spacing: -0.42px;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    letter-spacing: -0.49px;
+  }
+
+  .text-base {
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: -0.56px;
+  }
+
+  .text-md {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    letter-spacing: -0.63px;
+  }
+
+  .text-lg {
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: -0.7px;
+  }
+
+  .text-2lg {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: -0.84px;
+  }
+
+  .text-xl {
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: -1.12px;
+  }
+
+  .text-2xl {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    letter-spacing: -1.26px;
+  }
+
+  .text-3xl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -1.4px;
+  }
+
+  .text-4xl {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    letter-spacing: -1.96px;
+  }
+
+  .text-5xl {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    letter-spacing: -2.52px;
+  }
+}
+
 }

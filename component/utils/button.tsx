@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowRightIcon, PlusIcon } from "@radix-ui/react-icons";
-import ZoomIcon  from "@/public/media/icons/zoom.svg";
+import { PlusIcon } from "@radix-ui/react-icons";
+import ArrowRightIcon from "@/public/media/icons/arrow-right.svg";
 import cn from "clsx";
 import Image from "next/image";
 
@@ -21,7 +21,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
 export function Button({
   className = "",
   showArrow = true,
-  icon,
+  icon = "arrow-right",
   variant = "primary",
   href,
   type = "button",
@@ -31,7 +31,7 @@ export function Button({
 }: ButtonProps) {
   // Base button classes
   const baseClasses =
-    "inline-flex items-center justify-center gap-2.5 px-6 py-3 w-fit rounded-[0.875rem] text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
+    "inline-flex items-center justify-center gap-2.5 px-6 py-3 w-fit rounded-[0.875rem] text-sm lg:text-base font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
 
   // Variant-specific classes
   const variantClasses = {
@@ -55,13 +55,17 @@ export function Button({
       white: "#fff",
       dark: "#1A1C1E",
     };
+    const className = cn("size-6", {
+      "[&_path]:stroke-[#1A1C1E]": color === "dark",
+      "[&_path]:stroke-[#fff]": color === "white",
+    });
     if (icon === "plus") {
       return <PlusIcon color={colorMap[color]} />;
     }
     if (typeof icon !== "string") {
       return <> {icon} </>;
     }
-    return <ArrowRightIcon color={colorMap[color]} />;
+    return <ArrowRightIcon className={className} />;
   };
 
   // Button content
