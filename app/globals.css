@@ -205,12 +205,158 @@ body {
     letter-spacing: -2.52px;
   }
 
+
   .text-highlight {
     font-family: var(--font-instrument-sans);
     font-style: italic;
     color: var(--color-primary);
   }
-@variant md {
+
+  @media (min-width: 768px) {
+    .md\:text-xs {
+      font-size: 0.75rem;
+      line-height: normal;
+      letter-spacing: -0.42px;
+    }
+
+    .md\:text-sm {
+      font-size: 0.875rem;
+      line-height: 1.4;
+      letter-spacing: -0.49px;
+    }
+
+    .md\:text-base {
+      font-size: 1rem;
+      line-height: 1.4;
+      letter-spacing: -0.56px;
+    }
+
+    .md\:text-md {
+      font-size: 1.125rem;
+      line-height: 1.4;
+      letter-spacing: -0.63px;
+    }
+
+    .md\:text-lg {
+      font-size: 1.25rem;
+      line-height: 140%;
+      letter-spacing: -0.7px;
+    }
+
+    .md\:text-2lg {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      letter-spacing: -0.84px;
+    }
+
+    .md\:text-xl {
+      font-size: 2rem;
+      line-height: 1.4;
+      letter-spacing: -1.12px;
+    }
+
+    .md\:text-2xl {
+      font-size: 2.25rem;
+      line-height: 1.2;
+      letter-spacing: -1.26px;
+    }
+
+    .md\:text-3xl {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: -1.4px;
+    }
+
+    .md\:text-4xl {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      letter-spacing: -1.96px;
+    }
+    
+    .md\:text-5xl {
+      font-size: 4.5rem;
+      line-height: 1.2;
+      letter-spacing: -2.52px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:text-xs {
+      font-size: 0.75rem;
+      line-height: normal;
+      letter-spacing: -0.42px;
+    }
+
+    .lg\:text-sm {
+      font-size: 0.875rem;
+      line-height: 1.4;
+      letter-spacing: -0.49px;
+    }
+
+    .lg\:text-base {
+      font-size: 1rem;
+      line-height: 1.4;
+      letter-spacing: -0.56px;
+    }
+
+    .lg\:text-md {
+      font-size: 1.125rem;
+      line-height: 1.4;
+      letter-spacing: -0.63px;
+    }
+
+    .lg\:text-lg {
+      font-size: 1.25rem;
+      line-height: 140%;
+      letter-spacing: -0.7px;
+    }
+
+    .lg\:text-2lg {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      letter-spacing: -0.84px;
+    }
+
+    .lg\:text-xl {
+      font-size: 2rem;
+      line-height: 1.4;
+      letter-spacing: -1.12px;
+    }
+
+    .lg\:text-2xl {
+      font-size: 2.25rem;
+      line-height: 1.2;
+      letter-spacing: -1.26px;
+    }
+
+    .lg\:text-3xl {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: -1.4px;
+    }
+
+    .lg\:text-4xl {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      letter-spacing: -1.96px;
+    }
+    
+    .lg\:text-5xl {
+      font-size: 4.5rem;
+      line-height: 1.2;
+      letter-spacing: -2.52px;
+    }
+  }
+}
+
+/* @utility 
+  @custom-variant lg { 
+    @media (min-width: 1024px) {
+      @slot;
+    }} */
+/* @utility t */
+
+/* @variant md {
   .text-xs {
     font-size: 0.75rem;
     line-height: normal;
@@ -345,5 +491,4 @@ body {
     letter-spacing: -2.52px;
   }
 }
-
-}
+} */
