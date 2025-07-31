@@ -2,16 +2,16 @@
 
 import { useCheckDevice } from "@/lib/hooks/useCheckDevice";
 import Image, { ImageProps } from "next/image";
-import { CldImage } from "next-cloudinary";
+import { CldImage, CldImageProps } from "next-cloudinary";
 
 interface ResponsiveImageConfig {
-  src: string;
+  src?: string;
   width: ImageProps["width"];
   height: ImageProps["height"];
 }
 
 interface MyImageProps extends ImageProps {
-  src: ResponsiveImageConfig["src"];
+  src: string;
   tablet?: ResponsiveImageConfig;
   desktop?: ResponsiveImageConfig;
   isCloudinary?: boolean;
@@ -43,7 +43,7 @@ function MyImage({
   className = "",
   isCloudinary = false,
   ...props
-}: MyImageProps) {
+}: MyImageProps & CldImageProps) {
   const device = useCheckDevice();
   const isTablet = device === "tablet";
   const isDesktop = device === "desktop";
