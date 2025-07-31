@@ -4,7 +4,7 @@ import { MyImage, MyCldImage } from "./utils";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-gray pt-2.5 pb-7.5">
+    <section className="w-full bg-gray pt-2.5 pb-7.5 md:pb-10 lg:pb-15">
       <div className="page_container lg:max-w-full lg:px-4 -mb-[calc(124rem/16)] md:-mb-[calc(180rem/16)] lg:-mb-[calc((346rem - 72rem)/16)]">
         <div className="relative flex flex-col items-center w-full pt-15 md:pt-20 lg:pt-29.5 pb-[calc(124rem/16)] md:pb-[calc(180rem/16)] lg:pb-[calc((346rem - 72rem)/16)] rounded-lg md:rounded-xl lg:rounded-[0.875rem] bg-[image:linear-gradient(250deg,#E78D5C_1.2%,#2F8488_43.67%,#000_96.25%),linear-gradient(107deg,#672706_-2.13%,#024044_46.9%,#3A1E10_94.01%)]">
           {/* Background */}
