@@ -34,6 +34,7 @@
     --page-offset-horizontal: 2.5rem; /* 40px */
     --header-offset-horizontal: 3.12rem; /* 50px */
     --header-height: 6.25rem; /* 100px */
+    --inner-offset-horizontal: 2.5rem; /* 40px */
   }
 }
 
@@ -43,6 +44,7 @@
     --page-offset-horizontal: 4.94rem; /* 79px */
     --header-offset-horizontal: 5.62rem; /* 90px */
     --header-height: 6.25rem; /* 100px */
+    --inner-offset-horizontal: 3.125rem; /* 50px */
   }
 }
 
