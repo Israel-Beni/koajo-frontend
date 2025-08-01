@@ -48,12 +48,12 @@ function MyImage({
   const isTablet = device === "tablet";
   const isDesktop = device === "desktop";
   const responsiveConfig = {
-    ...(isDesktop && desktop),
-    ...(isTablet && tablet),
     src,
     alt,
     width,
     height,
+    ...(isTablet ? tablet : {}),
+    ...(isDesktop ? desktop : {}),
   };
 
   if (isCloudinary) {
