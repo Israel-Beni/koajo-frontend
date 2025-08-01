@@ -332,7 +332,9 @@ const Cross = () => (
 );
 
 // Use BarItemProps from @nivo/bar for the barComponent
-const ComparisonBar = (props: BarItemProps<{ company: string; value: number }>) => {
+const ComparisonBar = (
+  props: BarItemProps<{ company: string; value: number }>
+) => {
   const { bar, style } = props;
   // Only customize Koajo bar
   if (bar.data.id === "Koajo") {
@@ -376,26 +378,26 @@ const Comparison = () => {
     <section className="w-full  py-15 bg-gray">
       <div className="page_container">
         {/* headings */}
-        <div className="flex flex-col items-center text-center gap-5 mb-10">
-          <h2 className="text-xl font-medium text-gray-900">
+        <div className="flex flex-col items-center text-center gap-5 mb-gap-6 mb-10 lg:mb-12.5">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-900">
             <span className="text-highlight">Koajo</span> Vs How You used to do
             it
           </h2>
-          <p className="text-sm text-text-400">
+          <p className="text-sm md:text-base text-text-400">
             Unlike informal rotating savings, we are revolutionizing the way you
             experience savings
           </p>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-7.5">
           {/* Table */}
-          <div className="w-full  ">
-            <table className="w-full rounded-xl overflow-hidden">
+          <div className="w-full lg:max-w-[calc(843rem/16)]">
+            <table className="w-full rounded-xl lg:rounded-none overflow-hidden">
               <thead>
                 <tr>
                   {Object.keys(tableData[0]).map((key: string) => (
                     <th
                       className={cn(
-                        "text-text-500 text-sm font-normal px-3.5 py-5 capitalize text-center vertical-align-middle",
+                        "text-text-500 text-sm md:text-base lg:text-lg font-normal px-3.5 py-5 md:py-5.5 lg:py-4 capitalize text-center vertical-align-middle",
                         key === "label"
                           ? "bg-transparent min-w-[calc(114rem/16)]"
                           : "bg-cyan-100"
@@ -413,7 +415,7 @@ const Comparison = () => {
                     {Object.entries(row).map(([key, value]) => (
                       <td
                         className={cn(
-                          "text-center vertical-align-middle  px-2.5 py-4.5 text-sm",
+                          "text-center vertical-align-middle  px-2.5 lg:px-8 py-4.5 lg:py-7.5 text-sm md:text-base lg:text-lg",
                           key === "label"
                             ? "text-white bg-teal-800"
                             : key === "credit-cards"
@@ -430,7 +432,7 @@ const Comparison = () => {
                             alt="check"
                             width={18}
                             height={18}
-                            className="object-contain min-w-4.5 size-4.5 self-center justify-self-center"
+                            className="object-contain min-w-4.5 size-4.5 lg:size-6 self-center shrink-0 justify-self-center"
                           />
                         ) : (
                           <Image
@@ -438,7 +440,7 @@ const Comparison = () => {
                             alt="cross"
                             width={18}
                             height={18}
-                            className="object-contain min-w-4.5 size-4.5 self-center justify-self-center"
+                            className="object-contain min-w-4.5 size-4.5 lg:size-6 self-center shrink-0 justify-self-center"
                           />
                         )}
                       </td>
@@ -447,17 +449,24 @@ const Comparison = () => {
                 ))}
               </tbody>
             </table>
+            {/* Disclaimer */}
+            <p className="text-sm md:text-base text-text-400 p-2.5">
+              The information provided is for illustrative purposes only. Koajo
+              is not bank or a lender so no credit check is required to access
+              our products. 
+            </p>
           </div>
+
           {/* Chart */}
-          <div className="w-full max-w-md bg-teal-800 rounded-2xl p-5 mt-4 flex flex-col items-center">
-            <p className="text-sm text-white mb-4 text-center">
+          <div className="w-full max-w-md bg-teal-800 rounded-2xl p-5 lg:px-7.5 lg:py-6.5 mt-4 lg:mt-0 flex flex-col items-center h-fit">
+            <p className="text-sm md:text-base text-white mb-4 lg:mb-6">
               <span className="font-bold">Koajo</span> gives you{" "}
               <span className="font-bold">100% control</span> over your money,
               unlike traditional financial systems that set the rules for you.
               Here, your savings habits define your financial power, not a
               number.
             </p>
-            <div className="w-full h-56 relative">
+            <div className="w-full h-56 lg:h-[calc(246rem/16)] relative">
               <ResponsiveBar
                 data={data}
                 keys={["value"]}
