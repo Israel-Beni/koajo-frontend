@@ -5,13 +5,13 @@ export default function Features() {
     <section className="w-full bg-gray">
       <div className="page_container py-15">
         {/* headings */}
-        <div className="flex flex-col gap-5 items-center text-center mb-10">
-          <h2 className="text-xl font-semibold text-gray-900">
+        <div className="flex flex-col gap-5 md:gap-6 items-center text-center mb-10">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-900">
             Financial security isn&apos;t just about
             <span className="text-highlight">wealth</span> it&apos;s about
             mental <span className="text-highlight">peace</span>
           </h2>
-          <p className="text-sm text-text-400">
+          <p className="text-sm md:text-base lg:text-lg text-text-400">
             Unlike informal rotating savings, we are revolutionizing the way you
             experience savings
           </p>
