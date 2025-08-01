@@ -5,7 +5,7 @@ import ChevronUpIcon from "@/public/media/icons/chevron-up.svg";
 import cn from "clsx";
 
 export default function Solutions() {
-  const [activeSolution, setActiveSolution] = useState(-1);
+  const [activeSolution, setActiveSolution] = useState(0);
 
   const handleSolutionClick = (idx: number) => {
     setActiveSolution(idx);
@@ -46,9 +46,7 @@ export default function Solutions() {
                     {solution.title}
                   </h3>
                   <ChevronUpIcon
-                    className={cn("size-6 shrink-0 grow-0 transition-transform duration-300 ease-in-out", {
-                      "rotate-180": activeSolution === idx,
-                    })}
+                    className={cn("size-6 shrink-0 grow-0 transition-transform duration-300 ease-in-out", activeSolution === idx ? "rotate-0" : "rotate-180")}
                   />
                 </div>
                 <p className={cn("text-sm md:text-base lg:text-md text-gray-700 lg:max-h-0 overflow-hidden transition-all duration-300 ease-in-out", activeSolution === idx && "lg:max-h-96")}>
