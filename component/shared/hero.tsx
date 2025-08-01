@@ -10,7 +10,7 @@ export default function Hero({
   return (
     <section className="w-full bg-gray py-2.5">
       <div className="page_container">
-        <div className="relative min-h-[calc(384rem/16)] py-15 flex  justify-center items-center rounded-[0.875rem] bg-white">
+        <div className="relative min-h-[calc(384rem/16)] md:min-h-[calc(430rem/16)] lg:min-h-[calc(534rem/16)] py-15 flex  justify-center items-center rounded-[0.875rem] bg-white">
           {/* Background */}
           <div className="hidden md:block size-full absolute inset-0 z-0 rounded-[inherit]">
             <Image
@@ -24,11 +24,11 @@ export default function Hero({
           {/* Content */}
           <div className="inner_container relative z-10 flex flex-col  text-center gap-5">
             <h2
-              className="text-xl font-semibold text-text-600"
+              className="text-xl md:text-2xl lg:text-3xl font-semibold text-text-600"
               dangerouslySetInnerHTML={{ __html: title }}
             />
             <div
-              className="text-base text-text-500"
+              className="text-base md:text-lg text-text-500"
               dangerouslySetInnerHTML={{ __html: description }}
             />
           </div>
