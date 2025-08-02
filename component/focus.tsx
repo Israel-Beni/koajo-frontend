@@ -87,7 +87,7 @@ const focus: Focus[] = [
     icon: "/media/icons/value.svg",
     title: "The Value",
     description:
-      "Trust We build trust through transparency, reliability, and safeguarding your financial journey. Empowerment We empower you to take control of your money and achieve your financial goals.",
+      "We empower you to take control of your money and achieve your financial goals. Your needs drives us, every feature and decision is focused on your financial success.",
   },
   {
     icon: "/media/icons/promise.svg",
