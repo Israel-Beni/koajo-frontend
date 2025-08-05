@@ -9,15 +9,15 @@ export default function MainLinks() {
     device === "mobile" ? footerLinksMobile : footerLinksDesktop;
 
   return (
-    <div className="w-full flex flex-wrap gap-9 mb-5">
+    <div className="w-full flex flex-wrap lg:justify-between gap-9 lg:gap-x-25 lg:gap-y-10   mb-5 lg:mb-0 lg:grow lg:px-25 lg:py-10">
       {footerLinks.map((cluster) => (
         <div key={cluster.id} className="flex flex-col gap-8 max-w-[45%]">
           {cluster.group.map((group) => (
             <div key={group.id} className="w-full flex flex-col gap-4.5">
-              <div className="font-semibold text-base  text-white">
+              <div className="font-semibold text-base lg:text-lg text-white">
                 {group.title}
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 lg:gap-5">
                 {group.links.map((link, index) => (
                   <Link
                     key={index}
@@ -25,7 +25,7 @@ export default function MainLinks() {
                     target={
                       link.href.includes("maps.app.goo.gl") ? "_blank" : "_self"
                     }
-                    className="text-sm text-gray-100 hover:text-underline"
+                    className="text-sm lg:text-base text-gray-100 hover:text-underline"
                   >
                     {link.label}
                   </Link>
