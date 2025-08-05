@@ -95,7 +95,7 @@ export default function FaqListings() {
                   )
                 }
                 className={cn(
-                  "px-6 py-2 md:py-3 rounded-xl md:rounded-[0.875rem] text-sm md:text-base font-medium transition-colors border border-text-200",
+                  "px-6 py-2 md:py-3 rounded-xl md:rounded-[0.875rem] text-sm md:text-base font-medium transition-colors border border-text-200 cursor-pointer",
                   selectedCategory === category
                     ? "bg-primary text-white"
                     : "bg-white text-gray-600 hover:bg-gray-50"
@@ -138,7 +138,7 @@ export default function FaqListings() {
                       className="bg-white rounded-[0.875rem] px-4 py-5 hover:shadow-sm transition-shadow"
                     >
                       <Accordion.Trigger asChild>
-                        <button className="w-full text-left">
+                        <button className="w-full text-left cursor-pointer">
                           <div className="flex justify-between">
                             <h4 className="text-md md:text-lg font-medium text-gray-900 pr-4">
                               {highlightText(item.question, searchQuery)}
