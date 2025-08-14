@@ -1,6 +1,6 @@
-import { MyImage } from "@/component/utils";
-import { Button } from "@/component/utils";
-import Image from "next/image";
+import { MyImage, Button } from "@/component/utils";
+import ModalPerson from "@/component/modal-team-member";
+import type { Member } from "@/component/modal-team-member";
 
 export default function Team() {
   return (
@@ -29,8 +29,8 @@ export default function Team() {
                   height={335}
                   tablet={{
                     width: 400,
-                    height: 400 * 610 / 621,
-                  }}  
+                    height: (400 * 610) / 621,
+                  }}
                   desktop={{
                     width: 621,
                     height: 610,
@@ -41,23 +41,14 @@ export default function Team() {
                   quality={100}
                   isCloudinary
                 />
-                <Button
-                  className="absolute bottom-0 right-0 m-3 md:m-5 !px-2.25 !py-2.25 md:px-5 rounded-sm"
-                  icon={
-                    <Image
-                      src="media/icons/zoom.svg"
-                      width={20}
-                      height={20}
-                      className="size-5 md:size-8 lg:size-9.5 object-contain"
-                      alt="zoom icon"
-                    />
-                  }
-                />
+                <ModalPerson person={member} />
               </div>
               <h3 className="font-semibold text-lg md:text-2lg lg:text-xl mb-2.5 md:mb-1 text-gray-900">
                 {member.name}
               </h3>
-              <p className="text-sm md:text-base text-gray-400">{member.position}</p>
+              <p className="text-sm md:text-base text-gray-400">
+                {member.position}
+              </p>
             </div>
           ))}
         </div>
@@ -66,15 +57,17 @@ export default function Team() {
   );
 }
 
-const members = [
+const members: Member[] = [
   {
     name: "William Ikwogo",
     imageId: "william-ikwogo-headshot_yljijs",
     position: "Co-founder / Chief Executive Officer",
+    bio: ["William is a visionary entrepreneur and the driving force behind Koajo, a platform revolutionizing the traditional rotating savings model through technology and automation. With a Master’s degree in Information Science specializing in Data Science, he brings deep expertise in machine learning, data wrangling, and financial technology.", "Before launching Koajo, he honorably served in the U.S. Army, where he developed strong leadership, discipline, and problem-solving skills, qualities that now shape the foundation of Koajo’s mission. His passion for financial empowerment, inspired him to modernize the age-old rotating savings system, making it more secure, efficient, and scalable.", "Under his leadership, Koajo integrates cutting-edge data-driven solutions, ensuring a seamless, transparent, and trustworthy savings experience. His unique blend of military discipline, data science expertise, and financial innovation positions Koajo as a game-changer in the world of collective savings and wealth-building."],
   },
   {
     name: "Ama Adeniyi",
     imageId: "ama-adeniyi_axq6ew",
     position: "Co-founder / Chief Executive Officer",
+    bio: ["Ama is a visionary entrepreneur and the driving force behind Koajo, a platform revolutionizing the traditional rotating savings model through technology and automation. With a Master’s degree in Information Science specializing in Data Science, he brings deep expertise in machine learning, data wrangling, and financial technology.", "Before launching Koajo, he honorably served in the U.S. Army, where he developed strong leadership, discipline, and problem-solving skills, qualities that now shape the foundation of Koajo’s mission. His passion for financial empowerment, inspired him to modernize the age-old rotating savings system, making it more secure, efficient, and scalable.", "Under his leadership, Koajo integrates cutting-edge data-driven solutions, ensuring a seamless, transparent, and trustworthy savings experience. His unique blend of military discipline, data science expertise, and financial innovation positions Koajo as a game-changer in the world of collective savings and wealth-building."],
   },
 ];
