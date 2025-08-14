@@ -23,10 +23,11 @@ export default function Steps() {
       if (ref) {
         ScrollTrigger.create({
           trigger: ref,
-          start: "top 80%", // Trigger when step is 80% from top of viewport
-          end: "bottom 20%", // End when step is 20% from bottom
+          start: "top 50%",
+          end: "bottom 60%",
           onEnter: () => handleStepClick(idx),
           onEnterBack: () => handleStepClick(idx),
+          markers: true,
           onLeave: () => {
             // Only change if we're leaving to the next step
             if (idx < steps.length - 1) {
