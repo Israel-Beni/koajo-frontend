@@ -23,7 +23,11 @@
     "player.style": "^0.1.9",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-fast-marquee": "^1.6.5"
+    "react-fast-marquee": "^1.6.5",
+    "react-hotkeys-hook": "^5.1.0",
+    "react-transition-group": "^4.4.5",
+    "sass": "^1.90.0",
+    "scroll-lock": "^2.1.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
