@@ -1,4 +1,4 @@
-import ComingSoon from "@/component/shared/coming-soon";
+import ComingSoon from "@/components/shared/coming-soon";
 
 export default function AuthPage() {
   return <ComingSoon />;
