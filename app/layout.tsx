@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { geistSans } from "./fonts";
-import Header from "@/component/shared/header";
-import Footer from "@/component/shared/footer";
 
 export const metadata: Metadata = {
   title: "Koajo",
@@ -17,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.className} antialiased transition-all duration-300`}>
-        <Header />
-        <main className="mt-header-height">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
