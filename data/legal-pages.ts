@@ -17,62 +17,63 @@ const privacyPolicyData: LegalPageData = {
   content: [
     {
       title: "1. Information We Collect",
-      body: `<p>We collect various types of information as required by law to provide and improve our services, including:</p>
-<h3>a. Information You Provide Directly</h3>
-<ul>
-<li>Personal Information: Name, date of birth, email address, phone number, Social Security number (where required for verification), and mailing address.</li>
-<li>Financial Information: Bank account details, transaction history, and payout preferences.</li>
-<li>Identification Documents: Government-issued ID or SSN (for KYC verification).</li>
-</ul>
-<h3>b. Information Collected Automatically</h3>
-<ul>
-<li>Device Information: IP address, browser type, operating system, device identifiers, and network information.</li>
-<li>Usage Data: Logins, interactions with the platform, and savings pod activities.</li>
-<li>Cookies & Tracking Technologies: We use cookies and analytical tools to enhance user experience and track platform performance.</li>
-</ul>
-<h3>c. Information from Third Parties</h3>
-<ul>
-<li>Identity Verification: We partner with Stripe to verify your identity and process payments.</li>
-<li>Fraud Prevention Services: Data obtained from third-party fraud detection and AML compliance partners.</li>
-</ul>
+      body: `
+      <p>We collect various types of information as required by law to provide and improve our services, including:</p>
+        <h3>a. Information You Provide Directly</h3>
+        <ul>
+        <li>Personal Information: Name, date of birth, email address, phone number, Social Security number (where required for verification), and mailing address.</li>
+        <li>Financial Information: Bank account details, transaction history, and payout preferences.</li>
+        <li>Identification Documents: Government-issued ID or SSN (for KYC verification).</li>
+        </ul>
+        <h3>b. Information Collected Automatically</h3>
+        <ul>
+        <li>Device Information: IP address, browser type, operating system, device identifiers, and network information.</li>
+        <li>Usage Data: Logins, interactions with the platform, and savings pod activities.</li>
+        <li>Cookies & Tracking Technologies: We use cookies and analytical tools to enhance user experience and track platform performance.</li>
+        </ul>
+        <h3>c. Information from Third Parties</h3>
+        <ul>
+        <li>Identity Verification: We partner with Stripe to verify your identity and process payments.</li>
+        <li>Fraud Prevention Services: Data obtained from third-party fraud detection and AML compliance partners.</li>
+        </ul>
 `,
     },
     {
       title: "2. How We Use Your Information",
-      body: `<p>We use your information to:</p>
-<ul>
-<li>Facilitate savings pod participation and transactions.</li>
-<li>Verify your identity and comply with legal requirements.</li>
-<li>Provide customer support and respond to inquiries.</li>
-<li>Improve our platform functionality, security, and user experience.</li>
-<li>Prevent fraud, money laundering, and unauthorized activity.</li>
-<li>Send electronic or physical communications, including account updates and promotional content (you may opt out of marketing emails).</li>
-</ul>`,
+      body: `
+        <p>We use your information to:</p>
+        <ul>
+        <li>Facilitate savings pod participation and transactions.</li>
+        <li>Verify your identity and comply with legal requirements.</li>
+        <li>Provide customer support and respond to inquiries.</li>
+        <li>Improve our platform functionality, security, and user experience.</li>
+        <li>Prevent fraud, money laundering, and unauthorized activity.</li>
+        <li>Send electronic or physical communications, including account updates and promotional content (you may opt out of marketing emails).</li>
+        </ul>`,
     },
     {
       title: "3. How We Share Your Information",
-      body: `<p>We do not sell your personal information. However, we may share your data with:</p>
-<ul>
-<li>Service Providers: Third-party partners such as Stripe for payment processing and identity verification.</li>
-<li>Regulatory & Legal Authorities: When required by law, such as for AML compliance or fraud investigations.</li>
-<li>Business Transfers: In case of a merger, acquisition, or asset sale, your data may be transferred to the new entity.</li>
-<li>Other Users: Limited information may be visible within your savings pod for transparency purposes.</li>
-</ul>`,
-    },
-    {
-      subtitle: "3.1 Payment Processing & Funds Handling",
-      body: `<p>Koajo partners with Stripe, Inc. to securely manage identity verification, bank account linking, and ACH-based payment transfers. All user financial transactions on our platform are facilitated through Stripe's payment infrastructure.</p>
-<h3>When you make a contribution to a Koajo pod:</h3>
-<ul>
-<li>You authorize Koajo to debit your linked bank account on a bi-weekly basis for the amount agreed upon.</li>
-<li>Funds are temporarily held in Koajo's Stripe-connected account before being paid out to the designated user.</li>
-</ul>
-<h3>When it is your turn to receive your pod payout:</h3>
-<ul>
-<li>Koajo issues an ACH payment to your verified bank account, minus a 2.5% platform facilitation fee.</li>
-</ul>
-<p>Koajo does not store your bank login credentials or directly hold your funds. Stripe securely manages your sensitive financial data and ensures compliance with applicable financial regulations, including KYC (Know Your Customer) and AML (Anti-Money Laundering) requirements.</p>
-<p>By using Koajo, you also agree to Stripe's Connected Account Agreement.</p>`,
+      body: `
+        <p>We do not sell your personal information. However, we may share your data with:</p>
+        <ul>
+        <li>Service Providers: Third-party partners such as Stripe for payment processing and identity verification.</li>
+        <li>Regulatory & Legal Authorities: When required by law, such as for AML compliance or fraud investigations.</li>
+        <li>Business Transfers: In case of a merger, acquisition, or asset sale, your data may be transferred to the new entity.</li>
+        <li>Other Users: Limited information may be visible within your savings pod for transparency purposes.</li>
+        </ul>
+        <h3>3.1 Payment Processing & Funds Handling</h3>
+        <p>Koajo partners with Stripe, Inc. to securely manage identity verification, bank account linking, and ACH-based payment transfers. All user financial transactions on our platform are facilitated through Stripe's payment infrastructure.</p>
+        <h3>When you make a contribution to a Koajo pod:</h3>
+        <ul>
+        <li>You authorize Koajo to debit your linked bank account on a bi-weekly basis for the amount agreed upon.</li>
+        <li>Funds are temporarily held in Koajo's Stripe-connected account before being paid out to the designated user.</li>
+        </ul>
+        <strong>When it is your turn to receive your pod payout:</strong>
+        <ul>
+        <li>Koajo issues an ACH payment to your verified bank account, minus a 2.5% platform facilitation fee.</li>
+        </ul>
+        <p>Koajo does not store your bank login credentials or directly hold your funds. Stripe securely manages your sensitive financial data and ensures compliance with applicable financial regulations, including KYC (Know Your Customer) and AML (Anti-Money Laundering) requirements.</p>
+        <p>By using Koajo, you also agree to Stripe's Connected Account Agreement.</p>`,
     },
     {
       title: "4. Data Security & Protection",
@@ -80,52 +81,54 @@ const privacyPolicyData: LegalPageData = {
     },
     {
       title: "5. Data Retention Policy",
-      body: `<p>At Koajo, we value the privacy and security of our users' personal data. This Data Retention & Deletion Policy outlines how we collect, store, retain, and delete user information in compliance with applicable laws and regulations. We retain your information as long as necessary to provide our services, comply with legal obligations, resolve disputes, and enforce our agreements. Our data retention periods are as follows:</p>
-<h3>5.1 Data Retention</h3>
-<p>Koajo retains user data only as long as necessary to provide our services, comply with legal obligations, resolve disputes, and enforce our agreements. Our data retention periods are as follows:</p>
-<h3>5.1.1 Account & Profile Information</h3>
-<ul>
-<li>Personal information (e.g., name, email, phone number, and payout details) is retained for as long as the account remains active.</li>
-<li>If an account is inactive for 24 months, we may delete the data unless required for legal or regulatory compliance.</li>
-</ul>
-<h3>5.1.2 Transaction & Payment Data</h3>
-<p>Financial transactions, contributions to pods, and payout records are retained for 7 years to comply with financial regulations and auditing requirements.</p>
-<h3>5.1.3 Communications & Support Data</h3>
-<p>Messages exchanged with Koajo's support team are retained for 2 years after the last interaction.</p>
-<h3>5.1.4 Device & Usage Data</h3>
-<p>Analytical data used to improve services is retained for 3 years, after which it is anonymized or deleted.</p>
-<h3>5.2 Data Deletion</h3>
-<p>Users have the right to request deletion of their personal data under certain conditions. Data deletion requests can be made by contacting <a href="mailto:operations@koajo.com">operations@koajo.com</a>.</p>
-<h3>5.2.1 Account Deletion</h3>
-<ul>
-<li>Users can request account deletion at any time. Upon verification, Koajo will delete personal data within 30 days, unless retention is required by law.</li>
-<li>Transactional records associated with financial activity will be maintained as mandated by legal and compliance obligations.</li>
-</ul>
-<h3>5.2.2 Automated Deletion</h3>
-<p>If an account remains inactive for 24 months, it may be deleted after prior notification to the user.</p>
-<h3>5.2.3 Exceptions</h3>
-<p>Data may be retained beyond standard retention periods if required to meet legal, tax, regulatory, or fraud prevention obligations.</p>
-<h3>5.3. Data Security & Protection</h3>
-<p>We implement robust security measures to protect stored data from unauthorized access, alteration, or deletion.</p>
-<h3>5.4. Changes to This Policy</h3>
-<p>Koajo reserves the right to update this policy periodically. Users will be notified of significant changes through email or in-app notifications.</p>
-<h3>Data and Transaction Recordkeeping</h3>
-<p>Koajo retains records of all contributions, payouts, user verification, and related transaction metadata for up to 7 years in accordance with financial compliance obligations. This includes identity verification (KYC), pod participation history, and fee calculations.</p>
-<p>These records are stored securely and are accessible only to authorized personnel for audit, fraud prevention, and regulatory compliance.</p>
-<p>By using Koajo, you acknowledge and agree to the terms outlined in this policy.</p>
-<p>To exercise these rights, contact us at <a href="mailto:operations@koajo.com">operations@koajo.com</a>.</p>`,
+      body: `
+        <p>At Koajo, we value the privacy and security of our users' personal data. This Data Retention & Deletion Policy outlines how we collect, store, retain, and delete user information in compliance with applicable laws and regulations. We retain your information as long as necessary to provide our services, comply with legal obligations, resolve disputes, and enforce our agreements. Our data retention periods are as follows:</p>
+        <h3>5.1 Data Retention</h3>
+        <p>Koajo retains user data only as long as necessary to provide our services, comply with legal obligations, resolve disputes, and enforce our agreements. Our data retention periods are as follows:</p>
+        <h3>5.1.1 Account & Profile Information</h3>
+        <ul>
+        <li>Personal information (e.g., name, email, phone number, and payout details) is retained for as long as the account remains active.</li>
+        <li>If an account is inactive for 24 months, we may delete the data unless required for legal or regulatory compliance.</li>
+        </ul>
+        <h3>5.1.2 Transaction & Payment Data</h3>
+        <p>Financial transactions, contributions to pods, and payout records are retained for 7 years to comply with financial regulations and auditing requirements.</p>
+        <h3>5.1.3 Communications & Support Data</h3>
+        <p>Messages exchanged with Koajo's support team are retained for 2 years after the last interaction.</p>
+        <h3>5.1.4 Device & Usage Data</h3>
+        <p>Analytical data used to improve services is retained for 3 years, after which it is anonymized or deleted.</p>
+        <h3>5.2 Data Deletion</h3>
+        <p>Users have the right to request deletion of their personal data under certain conditions. Data deletion requests can be made by contacting <a href="mailto:operations@koajo.com">operations@koajo.com</a>.</p>
+        <h3>5.2.1 Account Deletion</h3>
+        <ul>
+        <li>Users can request account deletion at any time. Upon verification, Koajo will delete personal data within 30 days, unless retention is required by law.</li>
+        <li>Transactional records associated with financial activity will be maintained as mandated by legal and compliance obligations.</li>
+        </ul>
+        <h3>5.2.2 Automated Deletion</h3>
+        <p>If an account remains inactive for 24 months, it may be deleted after prior notification to the user.</p>
+        <h3>5.2.3 Exceptions</h3>
+        <p>Data may be retained beyond standard retention periods if required to meet legal, tax, regulatory, or fraud prevention obligations.</p>
+        <h3>5.3. Data Security & Protection</h3>
+        <p>We implement robust security measures to protect stored data from unauthorized access, alteration, or deletion.</p>
+        <h3>5.4. Changes to This Policy</h3>
+        <p>Koajo reserves the right to update this policy periodically. Users will be notified of significant changes through email or in-app notifications.</p>
+        <h3>Data and Transaction Recordkeeping</h3>
+        <p>Koajo retains records of all contributions, payouts, user verification, and related transaction metadata for up to 7 years in accordance with financial compliance obligations. This includes identity verification (KYC), pod participation history, and fee calculations.</p>
+        <p>These records are stored securely and are accessible only to authorized personnel for audit, fraud prevention, and regulatory compliance.</p>
+        <p>By using Koajo, you acknowledge and agree to the terms outlined in this policy.</p>
+        <p>To exercise these rights, contact us at <a href="mailto:operations@koajo.com">operations@koajo.com</a>.</p>`,
     },
     {
       title: "6. Your Privacy Rights",
-      body: `<p>Depending on your location, you may have rights to:</p>
-<ul>
-<li>Access, update, or correct your personal data.</li>
-<li>Request data deletion (subject to legal and regulatory constraints).</li>
-<li>Opt-out of marketing communications.</li>
-<li>Object to or restrict data processing in certain cases.</li>
-</ul>
-<p>To exercise these rights, contact us at <a href="mailto:support@koajo.com">support@koajo.com</a>.</p>
-<p>By using Koajo, you acknowledge and agree to the terms outlined in this policy.</p>`,
+      body: `
+        <p>Depending on your location, you may have rights to:</p>
+        <ul>
+        <li>Access, update, or correct your personal data.</li>
+        <li>Request data deletion (subject to legal and regulatory constraints).</li>
+        <li>Opt-out of marketing communications.</li>
+        <li>Object to or restrict data processing in certain cases.</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:support@koajo.com">support@koajo.com</a>.</p>
+        <p>By using Koajo, you acknowledge and agree to the terms outlined in this policy.</p>`,
     },
     {
       title: "7. Cookies & Tracking Technologies",
@@ -145,28 +148,29 @@ const privacyPolicyData: LegalPageData = {
     },
     {
       title: "11. Notice to California Users",
-      body: `<p>This notice is provided in accordance with the California Consumer Privacy Act (CCPA) and other applicable California privacy laws. It supplements the information contained in Koajo's Privacy Policy and applies solely to individuals residing in the State of California. As a California resident, you have specific rights regarding your personal information, including:</p>
-<ul>
-<li><strong>Right to Know</strong> - You may request information about the categories of personal information we collect, the purposes for which we use it, and the third parties with whom we share it.</li>
-<li><strong>Right to Access</strong> - You may request access to the specific pieces of personal information we have collected about you.</li>
-<li><strong>Right to Delete</strong> - You may request that we delete personal information we have collected from you, subject to certain legal exceptions.</li>
-<li><strong>Right to Opt-Out</strong> - You may opt out of the sale or sharing of your personal information (Koajo does not sell your personal information).</li>
-<li><strong>Right to Non-Discrimination</strong> - You have the right to not be discriminated against for exercising your privacy rights.</li>
-</ul>
-<h3>2. Categories of Personal Information We Collect:</h3>
-<p>Koajo collects personal information from California residents, including but not limited to:</p>
-<ul>
-<li>Identifiers (e.g., name, email address, SSN, phone number)</li>
-<li>Financial information (e.g., payment details, transaction history)</li>
-<li>Internet or device activity (e.g., browsing behavior on our platform)</li>
-<li>Geolocation data (if permitted by you)</li>
-</ul>
-<p>How to Exercise Your Rights: To submit a request to access, delete, or opt-out, please contact us at <a href="mailto:support@koajo.com">support@koajo.com</a> or visit koajo.com to verify your identity. We may require additional information from you.</p>
-<p>Authorized Agents: You may designate an authorized agent to make a request on your behalf. We will require proof of authorization and verification of your identity.</p>
-<p>Do Not Track Signals: Koajo does not respond to Do Not Track (DNT) signals at this time. This Privacy Policy will be updated to reflect our practices if we decide to respond to DNT signals in the future.</p>
-<p>Updates to This Notice: We may update this notice periodically to reflect changes in our privacy practices. Any modifications will be effective upon posting.</p>
-<p>For more details, please contact us at <a href="mailto:support@koajo.com">support@koajo.com</a>.</p>
-<p>Thank you for trusting Koajo.</p>`,
+      body: `
+        <p>This notice is provided in accordance with the California Consumer Privacy Act (CCPA) and other applicable California privacy laws. It supplements the information contained in Koajo's Privacy Policy and applies solely to individuals residing in the State of California. As a California resident, you have specific rights regarding your personal information, including:</p>
+        <ul>
+        <li><strong>Right to Know</strong> - You may request information about the categories of personal information we collect, the purposes for which we use it, and the third parties with whom we share it.</li>
+        <li><strong>Right to Access</strong> - You may request access to the specific pieces of personal information we have collected about you.</li>
+        <li><strong>Right to Delete</strong> - You may request that we delete personal information we have collected from you, subject to certain legal exceptions.</li>
+        <li><strong>Right to Opt-Out</strong> - You may opt out of the sale or sharing of your personal information (Koajo does not sell your personal information).</li>
+        <li><strong>Right to Non-Discrimination</strong> - You have the right to not be discriminated against for exercising your privacy rights.</li>
+        </ul>
+        <h3>2. Categories of Personal Information We Collect:</h3>
+        <p>Koajo collects personal information from California residents, including but not limited to:</p>
+        <ul>
+        <li>Identifiers (e.g., name, email address, SSN, phone number)</li>
+        <li>Financial information (e.g., payment details, transaction history)</li>
+        <li>Internet or device activity (e.g., browsing behavior on our platform)</li>
+        <li>Geolocation data (if permitted by you)</li>
+        </ul>
+        <p>How to Exercise Your Rights: To submit a request to access, delete, or opt-out, please contact us at <a href="mailto:support@koajo.com">support@koajo.com</a> or visit koajo.com to verify your identity. We may require additional information from you.</p>
+        <p>Authorized Agents: You may designate an authorized agent to make a request on your behalf. We will require proof of authorization and verification of your identity.</p>
+        <p>Do Not Track Signals: Koajo does not respond to Do Not Track (DNT) signals at this time. This Privacy Policy will be updated to reflect our practices if we decide to respond to DNT signals in the future.</p>
+        <p>Updates to This Notice: We may update this notice periodically to reflect changes in our privacy practices. Any modifications will be effective upon posting.</p>
+        <p>For more details, please contact us at <a href="mailto:support@koajo.com">support@koajo.com</a>.</p>
+        <p>Thank you for trusting Koajo.</p>`,
     },
     {
       title: "12. Contact Us",
