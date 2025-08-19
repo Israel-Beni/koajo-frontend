@@ -10,14 +10,15 @@
   --color-text-200: #dce4e8;
   --color-text-300: #b9b9b9;
   --color-text-400: #6c6c6c;
-  --color-text-500: #171717; /* default */
+  /* --color-text-500: #171717;  */
+  --color-text-500: #1A1C1E;  /* default */
   --color-text-600: #04070e;
   --color-gray: #f3f4f6;
   --color-gray-100: #ebebeb;
   --color-gray-400: #809092;
   --color-gray-700: #343434;
   --color-gray-900: #1b1b1b;
-  --color-gray-1000: #1A1C1E;
+  /* --color-gray-1000: #1A1C1E; */
   --color-teal-800: #032425;
   --color-cyan-100: #ecfcff;
 
@@ -86,7 +87,7 @@ body {
   --color-gray-400: var(--color-gray-400);
   --color-gray-700: var(--color-gray-700);
   --color-gray-900: var(--color-gray-900);
-  --color-gray-1000: var(--color-gray-1000);
+  /* --color-gray-1000: var(--color-gray-1000); */
   --color-teal-800: var(--color-teal-800);
   --color-cyan-100: var(--color-cyan-100);
 
