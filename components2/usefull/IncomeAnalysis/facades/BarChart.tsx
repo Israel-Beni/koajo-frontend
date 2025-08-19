@@ -1,8 +1,9 @@
 'use client';
 
-import { BarChart as RechartsBarChart, BarChartProps } from 'recharts';
+import React from 'react';
+import { BarChart as RechartsBarChart } from 'recharts';
 
-interface BarChartFacadeProps extends BarChartProps {
+interface BarChartFacadeProps extends React.ComponentProps<typeof RechartsBarChart> {
     // Add any additional props specific to your facade
     className?: string;
     children?: React.ReactNode;
