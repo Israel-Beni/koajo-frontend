@@ -49,7 +49,11 @@ const Modal = ({
     if (initialRender.current) {
       initialRender.current = false;
     } else {
-      visible ? disablePageScroll() : enablePageScroll();
+      if (visible) {
+        disablePageScroll();
+      } else {
+        enablePageScroll();
+      }
     }
   }, [visible]);
 
@@ -67,7 +71,10 @@ const Modal = ({
           unmountOnExit
         >
           <div
-            className={cn(styles.modal, className, makeFullHeight && "!p-0"
+            className={cn(
+              "fixed inset-0 z-[990] flex w-full h-full overflow-auto bg-color-gray-1000/30  backdrop-blur-[6.5px] items-center justify-center",
+              className,
+              makeFullHeight && "!p-0"
             )}
             onClick={onClose}
             data-scroll-lock-scrollable
