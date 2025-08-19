@@ -2,7 +2,7 @@
 import { useState } from "react";
 import cn from "clsx";
 import styles from "./Entry.module.sass";
-import Field from "@/components2/Field";
+import Field from "@/components2/usefull/Field";
 import Checkbox from "@/components2/Checkbox";
 import Description from "../Description";
 
