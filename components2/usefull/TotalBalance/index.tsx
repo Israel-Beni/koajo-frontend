@@ -7,27 +7,28 @@ import Icon from "@/components2/usefull/Icon";
 import Transfer from "@/components2/usefull/Transfer";
 import Receive from "@/components2/usefull/Receive";
 import Select from "@/components2/usefull/Select";
+import {Button} from "@/components/utils";
 
 const cards = [
     {
-        title: "**** 7189",
+        title: "Pod ID:#94044940",
         image: "/images/master-card.svg",
-        value: "7189",
+        value: "94044940",
     },
     {
-        title: "**** 4234",
+        title: "Pod ID:#42344234",
         image: "/images/visa.svg",
-        value: "4234",
+        value: "42344234",
     },
     {
-        title: "**** 1231",
+        title: "Pod ID:#12311231",
         image: "/images/master-card.svg",
-        value: "1231",
+        value: "12311231",
     },
     {
-        title: "**** 5643",
+        title: "Pod ID:#56435643",
         image: "/images/visa.svg",
-        value: "5643",
+        value: "56435643",
     },
 ];
 
@@ -42,22 +43,27 @@ const TotalBalance = ({ percent }: TotalBalanceProps) => {
 
     return (
         <Card
-            title="Total Balance"
-            tooltip="Small description"
+            title="Current Pod"
+            tooltip="The pod your are currently viewing"
             right={
                 <Select
                     className={styles.select}
                     value={card}
                     onChange={handleChange}
                     options={cards}
+                    label="Pod ID: #"
                     small
                 />
             }
         >
-            <div className={styles.price}>
-                $12,456,315 <Icon name="eye" size="18" />
+            <div className={cn(styles.price, "text-transparent bg-clip-text bg-[image:linear-gradient(107deg,#FD8B51_-2.13%,_#469DA3_49.87%,_#FD8B51_94.01%)]")}>
+                $100 Pod
             </div>
-            {percent && (
+            <Button
+              text="Join More Pods"
+              className="w-full"
+            />
+            {/* {percent && (
                 <div className={styles.line}>
                     <div
                         className={cn(
@@ -70,11 +76,11 @@ const TotalBalance = ({ percent }: TotalBalanceProps) => {
                     </div>
                     Increate this Month
                 </div>
-            )}
-            <div className={styles.btns}>
+            )} */}
+            {/* <div className={styles.btns}>
                 <Transfer className={styles.button} />
                 <Receive className={styles.button} />
-            </div>
+            </div> */}
         </Card>
     );
 };
