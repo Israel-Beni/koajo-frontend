@@ -6,16 +6,16 @@ import Icon from "@/components2/usefull/Icon";
 type DateChoiceProps = {
     className?: string;
     label?: string;
-    selected?: any;
-    selectsRange?: boolean;
-    startDate?: any;
-    endDate?: any;
-    onChange: any;
+    selected?: Date | null;
+    selectsRange?: true;
+    startDate?: Date | null;
+    endDate?: Date | null;
+    onChange: (date: Date | [Date | null, Date | null] | null, event: React.SyntheticEvent<Element> | undefined) => void;
     placeholderText?: string;
     dateFormat?: string;
     medium?: boolean;
     icon?: boolean;
-    props?: any;
+    props?: Record<string, unknown>;
 };
 
 const DateChoice = ({
@@ -40,7 +40,7 @@ const DateChoice = ({
     >
         {label && <div className={styles.label}>{label}</div>}
         <div className={styles.wrap}>
-            <DatePicker
+            {/* <DatePicker
                 dateFormat={dateFormat}
                 selected={selected}
                 selectsRange={selectsRange}
@@ -48,7 +48,8 @@ const DateChoice = ({
                 endDate={endDate}
                 onChange={onChange}
                 placeholderText={placeholderText}
-            />
+                selectsMultiple={undefined}
+            /> */}
             {icon && <Icon name="calendar" />}
         </div>
     </div>
