@@ -17,8 +17,10 @@
   --color-gray-400: #809092;
   --color-gray-700: #343434;
   --color-gray-900: #1b1b1b;
+  --color-gray-1000: #1A1C1E;
   --color-teal-800: #032425;
   --color-cyan-100: #ecfcff;
+
 
   /* Spacing */
   --page-max-width: 23.4375rem; /* 375px */
@@ -84,6 +86,7 @@ body {
   --color-gray-400: var(--color-gray-400);
   --color-gray-700: var(--color-gray-700);
   --color-gray-900: var(--color-gray-900);
+  --color-gray-1000: var(--color-gray-1000);
   --color-teal-800: var(--color-teal-800);
   --color-cyan-100: var(--color-cyan-100);
 
