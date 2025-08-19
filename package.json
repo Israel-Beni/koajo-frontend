@@ -39,7 +39,8 @@
     "remark-html": "^16.0.1",
     "sass": "^1.90.0",
     "scroll-lock": "^2.1.5",
-    "swiper": "^11.2.10"
+    "swiper": "^11.2.10",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
