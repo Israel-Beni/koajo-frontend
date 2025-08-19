@@ -11,23 +11,19 @@ import {Button} from "@/components/utils";
 
 const cards = [
     {
-        title: "Pod ID:#94044940",
-        image: "/images/master-card.svg",
+        title: "#94044940",
         value: "94044940",
     },
     {
-        title: "Pod ID:#42344234",
-        image: "/images/visa.svg",
+        title: "#42344234",
         value: "42344234",
     },
     {
-        title: "Pod ID:#12311231",
-        image: "/images/master-card.svg",
+        title: "#12311231",
         value: "12311231",
     },
     {
-        title: "Pod ID:#56435643",
-        image: "/images/visa.svg",
+        title: "#56435643",
         value: "56435643",
     },
 ];
@@ -48,10 +44,10 @@ const TotalBalance = ({ percent }: TotalBalanceProps) => {
             right={
                 <Select
                     className={styles.select}
+                    titlePrefix="ID:"
                     value={card}
                     onChange={handleChange}
                     options={cards}
-                    label="Pod ID: #"
                     small
                 />
             }
