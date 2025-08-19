@@ -72,7 +72,7 @@ const Modal = ({
         >
           <div
             className={cn(
-              "fixed inset-0 z-[990] flex w-full h-full overflow-auto bg-color-gray-1000/30  backdrop-blur-[6.5px] items-center justify-center",
+              "fixed inset-0 z-[990] flex w-full h-full overflow-auto bg-text-500/30  backdrop-blur-[6.5px] items-center justify-center",
               className,
               makeFullHeight && "!p-0"
             )}
