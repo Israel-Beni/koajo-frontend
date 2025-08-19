@@ -36,8 +36,8 @@ const Layout = ({
   const pathname = usePathname();
 
   useEffect(() => {
-      // clearQueueScrollLocks();
-      enablePageScroll();
+    // clearQueueScrollLocks();
+    enablePageScroll();
   }, [pathname]);
 
   return (
