@@ -1,11 +1,11 @@
-import Pricing from "@/components/pricing";
-import Hero from "@/components/hero-home";
-import Benefits from "@/components/benefits";
-import Steps from "@/components/steps";
-import Solutions from "@/components/solutions";
-import Features from "@/components/features";
-import Marques from "@/components/marques";
-import Comparison from "@/components/comparison";
+import Pricing from "@/components/main/pricing";
+import Hero from "@/components/main/hero-home";
+import Benefits from "@/components/main/benefits";
+import Steps from "@/components/main/steps";
+import Solutions from "@/components/main/solutions";
+import Features from "@/components/main/features";
+import Marques from "@/components/main/marques";
+import Comparison from "@/components/main/comparison";
 import { Modal } from "@/components/utils";
 
 export default function HomePage() {
