@@ -76,3 +76,12 @@ export type HTMLTag =
   | "template"
   | "slot"
   | "slot";
+
+  export type NotificationsType = {
+    id: string;
+    type: string;
+    title: string;
+    time: string;
+    info: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    new: boolean;
+};
